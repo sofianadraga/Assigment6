@@ -1,16 +1,8 @@
-//
-//  EmojiMemoryGame.swift
-//  Memorize
-//
-//  codes from CS193p Instructor, modified by Chenqin Zhang on 2024/03/19
-//
-
 import SwiftUI
 
 class EmojiMemoryGame: ObservableObject {
     @Published private var model: MemoryGame<String>
     private(set) var theme: ThemeStore.Theme
-//    private static var numberOfPairOfCards = 8
     var themeChooser: ThemeChooser
     
     init(themeID: UUID, themeChooser: ThemeChooser){
